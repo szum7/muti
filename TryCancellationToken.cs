@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace TryThreading
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			CancellationTokenSource tokenSource = new CancellationTokenSource();
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CancellationTokenSource tokenSource = new CancellationTokenSource();
             CancellationToken token = tokenSource.Token;
 
             var task = Task.Factory.StartNew((obj) =>
@@ -48,6 +48,6 @@ namespace TryThreading
             Thread.Sleep(3000);
 
             Console.WriteLine("Program is terminating.");
-		}
-	}
+        }
+    }
 }
