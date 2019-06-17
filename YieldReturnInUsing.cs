@@ -37,10 +37,10 @@ namespace Airports.YieldReturnInUsing
 
         public void MainMethod(IEnumerable<string> collection)
         {
-            foreach (string line in collection) 
+            foreach (string line in collection)
             {
-				// current ReadFrom method with 'yield return' remains "open", program control is here -> then at yield return -> then here -> ... -> end of yield return
-				// Resource in using block is not disposed until all yields return (?)
+                // current ReadFrom method with 'yield return' remains "open", program control is here -> then at yield return -> then here -> ... -> end of yield return
+                // Resource in using block is not disposed until all yields return (?)
                 Console.WriteLine(line);
             }
         }
