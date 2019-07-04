@@ -1,3 +1,5 @@
+// setFromTimeOptions-nél miért nem az eredeti model jön? Az ngModel string-é alakítja? (params.endTime -> TimeSpan)
+
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { LoadingScreenService } from '../../services/loading-screen.service';
 import { TimeSelectParams } from './models/time-select-params.model';
