@@ -1,0 +1,19 @@
+From
+<select [(ngModel)]="params.startTime"
+        (change)="setToTimeOptions()">
+  <option *ngFor="let op of fromOptions"
+          [value]="op.value"
+          [disabled]="op.isDisabled">
+    {{op.label}}
+  </option>
+</select>
+
+To
+<select [(ngModel)]="params.endTime"
+        (change)="setFromTimeOptions()">
+  <option *ngFor="let op of toOptions"
+          [value]="op.value"
+          [disabled]="op.isDisabled">
+    {{op.label}}
+  </option>
+</select>
