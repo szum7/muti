@@ -1,1 +1,3 @@
+https://kb.epam.com/display/~Zsolt_Bangha/EPM-BUDN+SmartScheduler
+
 https://www.codeproject.com/Articles/152765/Task-Parallel-Library-1-of-n
